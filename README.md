@@ -259,7 +259,7 @@ Di sinilah `git stash` berguna.
    ```
    Output:
    ```
-   stash@{0}: WIP on master: a1b2c3d feat(nav): add full navigation links to homepage
+   stash@{0}: WIP on master: 3154e7d feat(team): add team page with first member
    ```
 
 6. Sekarang kamu bisa pindah branch dengan aman untuk mengecek sesuatu:
