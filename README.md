@@ -1,6 +1,6 @@
 # 🛠️ Hands-On: Website Portofolio Tim
 
-**Skenario:** Kamu dan rekanmu (sebut saja "Rina") sedang membangun website portofolio tim bersama. Kamu mengerjakan halaman utama dan blog, sementara Rina mengerjakan halaman tim dan galeri. Di tengah jalan kalian akan mengalami konflik dan harus menyelesaikannya bersama.
+**Skenario:** Kamu dan rekanmu (sebut saja "Yuswanto") sedang membangun website portofolio tim bersama. Kamu mengerjakan halaman utama dan blog, sementara Yuswanto mengerjakan halaman tim dan galeri. Di tengah jalan kalian akan mengalami konflik dan harus menyelesaikannya bersama.
 
 ---
 
@@ -243,7 +243,7 @@
          <p>Spesialisasi di React dan Tailwind CSS.</p>
        </div>
        <div>
-         <h2>Rina — UI/UX Designer</h2>
+         <h2>Yuswanto — UI/UX Designer</h2>
          <p>Spesialisasi di Figma dan desain sistem.</p>
        </div>
      </body>
@@ -265,14 +265,14 @@
    git push -u origin master
    ```
 
-2. Rina meng-clone repo dan membuat branch untuk mengerjakan halaman galeri:
+2. Yuswanto meng-clone repo dan membuat branch untuk mengerjakan halaman galeri:
    ```bash
    git clone <url-repo-kamu>
    cd portfolio-tim
    git checkout -b feature/gallery
    ```
 
-3. Rina membuat file `pages/gallery.html` dan melakukan commit lalu push:
+3. Yuswanto membuat file `pages/gallery.html` dan melakukan commit lalu push:
    ```html
    <html>
      <head>
@@ -298,13 +298,13 @@
    git push origin feature/gallery
    ```
 
-4. Rina membuat Pull Request di GitHub dengan judul: `feat: add gallery page`.
+4. Yuswanto membuat Pull Request di GitHub dengan judul: `feat: add gallery page`.
 
 ---
 
 ## Skenario 7: Kamu Menambahkan Fitur Baru di Master
 
-Sementara menunggu PR Rina di-review, kamu melanjutkan pekerjaan di `master`.
+Sementara menunggu PR Yuswanto di-review, kamu melanjutkan pekerjaan di `master`.
 
 1. Tambahkan halaman `pages/contact.html`:
    ```html
@@ -338,7 +338,7 @@ Sementara menunggu PR Rina di-review, kamu melanjutkan pekerjaan di `master`.
          <p>Spesialisasi di React dan Tailwind CSS.</p>
        </div>
        <div>
-         <h2>Rina — UI/UX Designer</h2>
+         <h2>Yuswanto — UI/UX Designer</h2>
          <p>Spesialisasi di Figma dan desain sistem.</p>
        </div>
        <div>
@@ -357,9 +357,9 @@ Sementara menunggu PR Rina di-review, kamu melanjutkan pekerjaan di `master`.
 
 ---
 
-## Skenario 8: Konflik — Rina Juga Edit team.html
+## Skenario 8: Konflik — Yuswanto Juga Edit team.html
 
-Ternyata di branch `feature/gallery`, Rina juga mengedit `pages/team.html` untuk memperbarui deskripsinya sendiri dengan versi yang berbeda:
+Ternyata di branch `feature/gallery`, Yuswanto juga mengedit `pages/team.html` untuk memperbarui deskripsinya sendiri dengan versi yang berbeda:
 
 ```html
 <html>
@@ -373,7 +373,7 @@ Ternyata di branch `feature/gallery`, Rina juga mengedit `pages/team.html` untuk
       <p>Spesialisasi di React dan Tailwind CSS.</p>
     </div>
     <div>
-      <h2>Rina — UI/UX Designer</h2>
+      <h2>Yuswanto — UI/UX Designer</h2>
       <p>Berpengalaman 3 tahun di industri desain produk.</p>
     </div>
   </body>
@@ -381,15 +381,15 @@ Ternyata di branch `feature/gallery`, Rina juga mengedit `pages/team.html` untuk
 ```
 
 ```bash
-# Dilakukan oleh Rina di branch feature/gallery
+# Dilakukan oleh Yuswanto di branch feature/gallery
 git add pages/team.html
-git commit -m "feat(team): update Rina description with experience"
+git commit -m "feat(team): update Yuswanto description with experience"
 git push origin feature/gallery
 ```
 
-Ketika PR Rina dicek, terjadi konflik di `pages/team.html` karena kamu dan Rina sama-sama mengubah bagian deskripsi Rina dengan teks yang berbeda, dan kamu sudah menambahkan Budi yang tidak ada di versi Rina.
+Ketika PR Yuswanto dicek, terjadi konflik di `pages/team.html` karena kamu dan Yuswanto sama-sama mengubah bagian deskripsi Yuswanto dengan teks yang berbeda, dan kamu sudah menambahkan Budi yang tidak ada di versi Yuswanto.
 
-**Rina menyelesaikan konflik dari sisi branchnya:**
+**Yuswanto menyelesaikan konflik dari sisi branchnya:**
 
 ```bash
 git checkout feature/gallery
@@ -410,7 +410,7 @@ Git akan menandai konflik di `pages/team.html` seperti ini:
       <p>Spesialisasi di React dan Tailwind CSS.</p>
     </div>
     <div>
-      <h2>Rina — UI/UX Designer</h2>
+      <h2>Yuswanto — UI/UX Designer</h2>
 <<<<<<< HEAD
       <p>Berpengalaman 3 tahun di industri desain produk.</p>
 =======
@@ -425,7 +425,7 @@ Git akan menandai konflik di `pages/team.html` seperti ini:
 </html>
 ```
 
-Rina menyelesaikan konflik secara manual — menggabungkan deskripsinya yang lebih lengkap sekaligus mempertahankan tambahan Budi dari master:
+Yuswanto menyelesaikan konflik secara manual — menggabungkan deskripsinya yang lebih lengkap sekaligus mempertahankan tambahan Budi dari master:
 
 ```html
 <html>
@@ -439,7 +439,7 @@ Rina menyelesaikan konflik secara manual — menggabungkan deskripsinya yang leb
       <p>Spesialisasi di React dan Tailwind CSS.</p>
     </div>
     <div>
-      <h2>Rina — UI/UX Designer</h2>
+      <h2>Yuswanto — UI/UX Designer</h2>
       <p>Berpengalaman 3 tahun di industri desain produk.</p>
     </div>
     <div>
@@ -456,7 +456,7 @@ git commit -m "fix(team): resolve conflict by merging member descriptions"
 git push origin feature/gallery
 ```
 
-Setelah push, PR Rina sudah tidak konflik lagi dan siap di-merge. Lakukan merge PR di GitHub, lalu hapus branch `feature/gallery`.
+Setelah push, PR Yuswanto sudah tidak konflik lagi dan siap di-merge. Lakukan merge PR di GitHub, lalu hapus branch `feature/gallery`.
 
 ---
 
