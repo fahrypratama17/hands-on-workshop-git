@@ -326,7 +326,7 @@ Di sinilah `git stash` berguna.
    ```
    9141c90 (HEAD -> main) feat(faq): add FAQ page with common questions     
    3154e7d feat(team): add team page with first member    ← ingin undo ini
-   ba62862 Merge branch 'feature/blog' : add article in blog.html
+   ba62862 Merge branch 'feature/blog'
    058689f (feature/blog) feat(blog): add second blog post
    e7ad63b fix(blog): delete typo in index.html
    6259e22 feat(nav): add full navigation links to homepage
