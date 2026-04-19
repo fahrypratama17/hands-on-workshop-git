@@ -47,7 +47,7 @@
 
 6. Masukkan ke `.gitignore`:
    ```bash
-   echo "draft-notes.txt" > .gitignore
+   echo draft-notes.txt > .gitignore
    ```
 
 7. Buat folder `pages` untuk menampung halaman-halaman lain:
